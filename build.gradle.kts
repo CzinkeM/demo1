@@ -43,3 +43,7 @@ kotlin {
         }
     }
 }
+
+tasks.create("stage") {
+    dependsOn("build", "clean")
+}
