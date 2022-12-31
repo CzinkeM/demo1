@@ -9,6 +9,9 @@ fun main() {
     var count: Int by mutableStateOf(0)
 
     renderComposable(rootElementId = "root") {
+        Div() {
+            Text("Hello World from Compose")
+        }
         Div({ style { padding(25.px) } }) {
             Button(attrs = {
                 onClick { count -= 1 }
